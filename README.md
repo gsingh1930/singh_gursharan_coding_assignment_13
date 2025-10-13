@@ -1,3 +1,11 @@
+# Instructions to build a component library with react and typescript.
+
+## Prerequisites
+
+- Node.js
+- npm
+- Docker Desktop
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +52,32 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# initialize install storybook inside project folder by running the following command
+npx storybook init
+
+# run this command for styled componenets
+npm install styled-components
+npm install --save-dev @types/styled-components
+
+# run this command inside the project folder to install jest testing
+npm install --save-dev @testing-library/react @testing-library/jest-dom jest-styled-components
+
+# Then we make components
+
+1. Make folders for each component and make sub tables for tables compoents inside tables folder.
+2. Make the following files in each folder componentName.stories.tsx, compoenentName.test.tsx, componentName.tsx, componentName.types.tsx, index.tsx and code each file for compoenents.
+
+# after making components we run the storybook and tests and prepare for docker conatinerization
+
+1. Make Dockerfile inside project folder to run at port 8083 and other details on how to run.
+2. run the storybook using the following command - and use it to see the componenets working
+- npm run storybook
+3. test using the following command
+- npm test
+4. docker build command
+- docker build -t singh_gursharan_coding_assignment12 .
+5. run docker contaienr using the command below
+- docker run -d -p 8083:8083 --name singh_gursharan_coding_assignment12 singh_gursharan_coding_assignment12
+6. Stop the running container
+- docker stop singh_gursharan_coding_assignment12
