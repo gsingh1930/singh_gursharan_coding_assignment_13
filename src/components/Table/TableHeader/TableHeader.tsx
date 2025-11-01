@@ -23,7 +23,12 @@ const StyledTh = styled.th`
   }
 `;
 
-const TableHeader = ({ headers, disabled, backgroundColor, ...props }: TableHeaderProps) => (
+const TableHeader = ({
+  headers,
+  disabled,
+  backgroundColor,
+  ...props
+}: TableHeaderProps) => (
   <StyledTableHeader
     headers={headers}
     disabled={disabled}

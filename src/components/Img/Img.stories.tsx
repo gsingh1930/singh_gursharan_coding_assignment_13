@@ -19,7 +19,7 @@ export const Default: Story = {
   args: {
     src: 'https://www.pexels.com/photo/concrete-road-between-trees-1563356',
     alt: 'Road Image',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -27,6 +27,6 @@ export const Disabled: Story = {
   args: {
     src: 'https://www.pexels.com/photo/concrete-road-between-trees-1563356',
     alt: 'Disabled image',
-    disabled: true
+    disabled: true,
   },
 };

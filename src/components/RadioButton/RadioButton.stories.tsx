@@ -22,7 +22,7 @@ export const Default: Story = {
     label: 'Raadio',
     name: 'radio-city',
     value: 'wpg',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -31,6 +31,6 @@ export const Disabled: Story = {
     label: 'Disabled Radio button',
     name: 'radio-city',
     value: 'albaquerque',
-    disabled: true
+    disabled: true,
   },
 };

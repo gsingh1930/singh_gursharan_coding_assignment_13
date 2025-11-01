@@ -20,7 +20,7 @@ export const Default: Story = {
     title: 'Info card',
     content: 'Crd is a flexible and extensible content container.',
     backgroundColor: '#ffffff',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -29,6 +29,6 @@ export const Disabled: Story = {
     title: 'card not working',
     content: 'Card is disabled. Please try again later.',
     backgroundColor: '#ffffff',
-    disabled: true
+    disabled: true,
   },
 };

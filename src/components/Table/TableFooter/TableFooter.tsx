@@ -23,7 +23,12 @@ const StyledTd = styled.td`
   }
 `;
 
-const TableFooter = ({ footers, disabled, backgroundColor, ...props }: TableFooterProps) => (
+const TableFooter = ({
+  footers,
+  disabled,
+  backgroundColor,
+  ...props
+}: TableFooterProps) => (
   <StyledTableFooter
     footers={footers}
     disabled={disabled}

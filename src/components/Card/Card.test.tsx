@@ -9,6 +9,8 @@ test('renders card and is visible', () => {
 });
 
 test('card changes opacity when disabled', () => {
-  const { container } = render(<Card title="Test" content="Content" disabled />);
+  const { container } = render(
+    <Card title="Test" content="Content" disabled />
+  );
   expect(container.firstChild).toHaveStyleRule('opacity', '0.6');
 });

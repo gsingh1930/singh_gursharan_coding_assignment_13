@@ -18,7 +18,12 @@ const StyledTableCell = styled.td.withConfig({
   }
 `;
 
-const TableCell = ({ content, disabled, backgroundColor, ...props }: TableCellProps) => (
+const TableCell = ({
+  content,
+  disabled,
+  backgroundColor,
+  ...props
+}: TableCellProps) => (
   <StyledTableCell
     content={content}
     disabled={disabled}

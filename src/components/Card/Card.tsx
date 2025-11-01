@@ -31,7 +31,13 @@ const CardContent = styled.p`
   color: #495057;
 `;
 
-const Card = ({ title, content, disabled, backgroundColor, ...props }: CardProps) => (
+const Card = ({
+  title,
+  content,
+  disabled,
+  backgroundColor,
+  ...props
+}: CardProps) => (
   <StyledCard
     title={title}
     content={content}

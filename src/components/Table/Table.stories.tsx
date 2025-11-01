@@ -37,7 +37,7 @@ export const Default: Story = {
         </tbody>
         <TableFooter footers={['order', '15', '10']} />
       </>
-    )
+    ),
   },
 };
 
@@ -56,6 +56,6 @@ export const Disabled: Story = {
         </tbody>
         <TableFooter footers={['Total', '1 person', '1 city']} />
       </>
-    )
+    ),
   },
 };

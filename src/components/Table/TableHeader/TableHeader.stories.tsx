@@ -25,7 +25,7 @@ export const Default: Story = {
   args: {
     headers: ['object', 'price', 'qty'],
     backgroundColor: '#343a40',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -33,6 +33,6 @@ export const Disabled: Story = {
   args: {
     headers: ['object', 'price', 'qty'],
     backgroundColor: '#343a40',
-    disabled: true
+    disabled: true,
   },
 };

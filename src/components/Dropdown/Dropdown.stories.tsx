@@ -19,7 +19,7 @@ export const Default: Story = {
   args: {
     options: ['Mansa', 'Wpg', 'albaquerque'],
     placeholder: 'Select a city',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -27,6 +27,6 @@ export const Disabled: Story = {
   args: {
     options: ['Mansa', 'Wpg', 'albaquerque'],
     placeholder: 'Select a city',
-    disabled: true
+    disabled: true,
   },
 };

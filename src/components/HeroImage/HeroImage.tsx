@@ -40,7 +40,14 @@ const HeroTitle = styled.h1`
   }
 `;
 
-const HeroImage = ({ src, alt, title, disabled, backgroundColor, ...props }: HeroImageProps) => (
+const HeroImage = ({
+  src,
+  alt,
+  title,
+  disabled,
+  backgroundColor,
+  ...props
+}: HeroImageProps) => (
   <HeroContainer
     src={src}
     alt={alt}

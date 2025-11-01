@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { DropdownProps } from './Dropdown.types';
 
-const StyledSelect = styled.select<{ disabled?: boolean; backgroundColor?: string }>`
+const StyledSelect = styled.select<{
+  disabled?: boolean;
+  backgroundColor?: string;
+}>`
   background-color: ${({ disabled, backgroundColor }) =>
     disabled ? '#ccc' : backgroundColor || '#ffffff'};
   color: ${({ disabled }) => (disabled ? '#6c757d' : '#212529')};
@@ -19,7 +22,13 @@ const StyledSelect = styled.select<{ disabled?: boolean; backgroundColor?: strin
   }
 `;
 
-const Dropdown = ({ options, placeholder = 'Select...', onChange, disabled, backgroundColor }: DropdownProps) => {
+const Dropdown = ({
+  options,
+  placeholder = 'Select...',
+  onChange,
+  disabled,
+  backgroundColor,
+}: DropdownProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (onChange) {
       onChange(e.target.value);

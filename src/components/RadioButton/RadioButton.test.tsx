@@ -9,6 +9,8 @@ test('renders radio button and is visible', () => {
 });
 
 test('radio button changes opacity when disabled', () => {
-  const { container } = render(<RadioButton label="Test" name="test" value="test" disabled />);
+  const { container } = render(
+    <RadioButton label="Test" name="test" value="test" disabled />
+  );
   expect(container.firstChild).toHaveStyleRule('opacity', '0.6');
 });

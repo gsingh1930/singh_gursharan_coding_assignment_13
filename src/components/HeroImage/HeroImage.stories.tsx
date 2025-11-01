@@ -21,7 +21,7 @@ export const Default: Story = {
     src: 'https://www.pexels.com/photo/silhouette-photography-of-person-under-starry-sky-1906658',
     alt: 'night sky with stars',
     title: 'this is a hero title example',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -30,6 +30,6 @@ export const Disabled: Story = {
     src: 'https://www.pexels.com/photo/concrete-road-between-trees-1563356',
     alt: 'Seconds hand',
     title: 'Disabled Hero',
-    disabled: true
+    disabled: true,
   },
 };

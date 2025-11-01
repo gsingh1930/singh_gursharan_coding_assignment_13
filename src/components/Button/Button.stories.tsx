@@ -19,5 +19,9 @@ export const Default: Story = {
 };
 
 export const Disabled: Story = {
-  args: { label: 'Button not workig', backgroundColor: '#007bff', disabled: true },
+  args: {
+    label: 'Button not workig',
+    backgroundColor: '#007bff',
+    disabled: true,
+  },
 };

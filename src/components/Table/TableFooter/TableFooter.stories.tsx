@@ -25,7 +25,7 @@ export const Default: Story = {
   args: {
     footers: ['sum', '250', '2'],
     backgroundColor: '#f8f9fa',
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -33,6 +33,6 @@ export const Disabled: Story = {
   args: {
     footers: ['sum', '100', '5'],
     backgroundColor: '#f8f9fa',
-    disabled: true
+    disabled: true,
   },
 };

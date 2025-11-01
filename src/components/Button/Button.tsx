@@ -20,7 +20,13 @@ const StyledButton = styled.button.withConfig({
   }
 `;
 
-const Button = ({ label, disabled, backgroundColor, onClick, ...props }: ButtonProps) => (
+const Button = ({
+  label,
+  disabled,
+  backgroundColor,
+  onClick,
+  ...props
+}: ButtonProps) => (
   <StyledButton
     label={label}
     disabled={disabled}

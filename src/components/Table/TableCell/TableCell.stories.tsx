@@ -28,13 +28,13 @@ type Story = StoryObj<typeof TableCell>;
 export const Default: Story = {
   args: {
     content: 'cell entry',
-    disabled: false
+    disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
     content: 'Disabled Cell',
-    disabled: true
+    disabled: true,
   },
 };

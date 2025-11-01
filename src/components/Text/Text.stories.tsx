@@ -15,9 +15,17 @@ export default meta;
 type Story = StoryObj<typeof Text>;
 
 export const Default: Story = {
-  args: { content: 'test check comp', backgroundColor: '#f8f9fa', disabled: false },
+  args: {
+    content: 'test check comp',
+    backgroundColor: '#f8f9fa',
+    disabled: false,
+  },
 };
 
 export const Disabled: Story = {
-  args: { content: 'Text not started', backgroundColor: '#f8f9fa', disabled: true },
+  args: {
+    content: 'Text not started',
+    backgroundColor: '#f8f9fa',
+    disabled: true,
+  },
 };

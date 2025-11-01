@@ -9,6 +9,8 @@ test('renders hero image and is visible', () => {
 });
 
 test('hero image changes opacity when disabled', () => {
-  const { container } = render(<HeroImage src="test.jpg" alt="Test" title="Hero" disabled />);
+  const { container } = render(
+    <HeroImage src="test.jpg" alt="Test" title="Hero" disabled />
+  );
   expect(container.firstChild).toHaveStyleRule('opacity', '0.6');
 });

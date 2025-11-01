@@ -31,7 +31,7 @@ export const Default: Story = {
         <td>5</td>
       </>
     ),
-    disabled: false
+    disabled: false,
   },
 };
 
@@ -44,6 +44,6 @@ export const Disabled: Story = {
         <td>15</td>
       </>
     ),
-    disabled: true
+    disabled: true,
   },
 };

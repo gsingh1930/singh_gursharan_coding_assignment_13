@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { RadioButtonProps } from './RadioButton.types';
 
 const RadioContainer = styled.label.withConfig({
-  shouldForwardProp: (prop) => !['label', 'name', 'value', 'checked'].includes(prop),
+  shouldForwardProp: (prop) =>
+    !['label', 'name', 'value', 'checked'].includes(prop),
 })<RadioButtonProps>`
   display: inline-flex;
   align-items: center;
@@ -25,7 +26,16 @@ const StyledInput = styled.input`
   cursor: inherit;
 `;
 
-const RadioButton = ({ label, name, value, checked, onChange, disabled, backgroundColor, ...props }: RadioButtonProps) => (
+const RadioButton = ({
+  label,
+  name,
+  value,
+  checked,
+  onChange,
+  disabled,
+  backgroundColor,
+  ...props
+}: RadioButtonProps) => (
   <RadioContainer
     label={label}
     name={name}
