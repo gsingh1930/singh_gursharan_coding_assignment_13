@@ -1,5 +1,7 @@
 # Instructions to build a component library with react and typescript.
 
+The project is a react component library with integrated code quality checks using Husky and Github Actions
+
 ## Prerequisites
 
 - Node.js
@@ -68,16 +70,28 @@ npm install --save-dev @testing-library/react @testing-library/jest-dom jest-sty
 1. Make folders for each component and make sub tables for tables compoents inside tables folder.
 2. Make the following files in each folder componentName.stories.tsx, compoenentName.test.tsx, componentName.tsx, componentName.types.tsx, index.tsx and code each file for compoenents.
 
-# after making components we run the storybook and tests and prepare for docker conatinerization
+# after making components we run the storybook and tests
 
 1. Make Dockerfile inside project folder to run at port 8083 and other details on how to run.
 2. run the storybook using the following command - and use it to see the componenets working
 - npm run storybook
 3. test using the following command
 - npm test
-4. docker build command
-- docker build -t singh_gursharan_coding_assignment12 .
-5. run docker contaienr using the command below
-- docker run -d -p 8083:8083 --name singh_gursharan_coding_assignment12 singh_gursharan_coding_assignment12
-6. Stop the running container
-- docker stop singh_gursharan_coding_assignment12
+
+# Now we install husky and put on code quality checks
+1. npm install --save-dev husky lint-staged prettier eslint
+2. npx husky-init && npm install
+3. create .prettierrc file by using command 'touch .prettierrc' and add code
+4. create eslintrc.json file and add the code
+5. npx husky add .husky/pre-commit "npx lint-staged"
+6. we will create the folder and file for github workflow using the two following commands.
+mkdir -p .github/workflows
+touch .github/workflows/ci.yml
+
+# prepare for docker conatinerization
+1. docker build command
+- docker build -t singh_gursharan_coding_assignment13 .
+2. run docker contaienr using the command below
+- docker run -d -p 8018:8018 --name singh_gursharan_coding_assignment13 singh_gursharan_coding_assignment13
+3. Stop the running container
+- docker stop singh_gursharan_coding_assignment13
